@@ -37,3 +37,15 @@ console.log(array3) // [1, 2, 3, 5, 6], sort will affect the original array
 let array4 = [1, 2, 10, 3, 6, 5]
 console.log(array4.sort()) // [1, 10, 2, 3, 5, 6]  sort() converts elements to strings and sort lexicographically by default
 console.log(array4.sort((a, b) => a - b)) // [1, 2, 3, 5, 6, 10]  sort() numerical sorting
+
+// splice
+let array5 = ["Microsoft", "Apple", "Yahoo", "AOL", "Excite", "Oracle"]
+// splice from index 2, delete 3 elements, and add two elements
+console.log(array5.splice(2, 3, "Google", "Facebook")) // return elements removed: ['Yahoo', 'AOL', 'Excite']
+console.log(array5) // ['Microsoft', 'Apple', 'Google', 'Facebook', 'Oracle']
+// delete only, no add:
+console.log(array5.splice(2, 2)) // ['Google', 'Facebook']
+console.log(array5) // ['Microsoft', 'Apple', 'Oracle']
+// only add, no delete:
+console.log(array5.splice(2, 0, "Google", "Facebook")) // return []
+console.log(array5) // ['Microsoft', 'Apple', 'Google', 'Facebook', 'Oracle']
