@@ -29,3 +29,11 @@ console.log(array2.shift()) // 2
 console.log(array2) // []
 console.log(array2.shift()) // shift an empty array will return undefined
 console.log(array2) // []
+
+// sort
+let array3 = [1, 2, 3, 6, 5]
+console.log(array3.sort()) // [1, 2, 3, 5, 6]
+console.log(array3) // [1, 2, 3, 5, 6], sort will affect the original array
+let array4 = [1, 2, 10, 3, 6, 5]
+console.log(array4.sort()) // [1, 10, 2, 3, 5, 6]  sort() converts elements to strings and sort lexicographically by default
+console.log(array4.sort((a, b) => a - b)) // [1, 2, 3, 5, 6, 10]  sort() numerical sorting
