@@ -55,3 +55,7 @@ let array6 = ["Microsoft", "Apple", "Yahoo", "AOL", "Excite", "Oracle"]
 // concat doesn't change the existing array, but instead create a new array and return it
 console.log(array6.concat(1, 2, [3, [4]])) // ["Microsoft", "Apple", "Yahoo", "AOL", "Excite", "Oracle", 1,2,3,[4]]
 console.log(array6) // ["Microsoft", "Apple", "Yahoo", "AOL", "Excite", "Oracle"]
+
+// join
+let array7 = ["Microsoft", "Apple", "Yahoo", "AOL", "Excite", "Oracle"]
+console.log(array7.join("-")) // Microsoft-Apple-Yahoo-AOL-Excite-Oracle
