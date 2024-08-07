@@ -72,3 +72,13 @@ const beyondLastIndex = fruits.slice(2, 10)
 console.log(`Here is the beyond last index: ${beyondLastIndex}`) // cherry, date, fig;
 const clonedFruits = fruits.slice()
 console.log(`Here is the cloned array: ${clonedFruits}`) // apple, banana, cherry, date, fig;
+
+// every
+// every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.
+const array8 = [3,4,5];
+const array9 = [1,2,3];
+
+const checkArray8 = array8.every((element) => element > 2);
+console.log(`Here is the result of array8: ${checkArray8}`); // true
+const checkArray9 = array9.every((element) => element > 2);
+console.log(`Here is the result of array9: ${checkArray9}`); // false
