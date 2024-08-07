@@ -59,3 +59,16 @@ console.log(array6) // ["Microsoft", "Apple", "Yahoo", "AOL", "Excite", "Oracle"
 // join
 let array7 = ["Microsoft", "Apple", "Yahoo", "AOL", "Excite", "Oracle"]
 console.log(array7.join("-")) // Microsoft-Apple-Yahoo-AOL-Excite-Oracle
+
+// slice
+// slice does not change the existing array, it will create a shallow copy of a portion of the existing array. It returns a new array containing the extracted elements
+const fruits = ["apple", "banana", "cherry", "date", "fig"]
+const slicedFruits = fruits.slice(1, 3)
+console.log(`Here is the sliced array: ${slicedFruits}`) // banana, cherry;
+console.log(`Here is the original array: ${fruits}`) // apple, banana, cherry, date, fig;
+const lastTwoFruits = fruits.slice(-2)
+console.log(`Here is the last two fruits: ${lastTwoFruits}`) // date, fig;
+const beyondLastIndex = fruits.slice(2, 10)
+console.log(`Here is the beyond last index: ${beyondLastIndex}`) // cherry, date, fig;
+const clonedFruits = fruits.slice()
+console.log(`Here is the cloned array: ${clonedFruits}`) // apple, banana, cherry, date, fig;
