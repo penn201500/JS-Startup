@@ -70,6 +70,8 @@ const lastTwoFruits = fruits.slice(-2)
 console.log(`Here is the last two fruits: ${lastTwoFruits}`) // date, fig;
 const beyondLastIndex = fruits.slice(2, 10)
 console.log(`Here is the beyond last index: ${beyondLastIndex}`) // cherry, date, fig;
+const fromIndexToEnd = fruits.slice(2); // from index 2 to the end
+console.log(`Here is the from index to end: ${fromIndexToEnd}`) // cherry, date, fig;
 const clonedFruits = fruits.slice()
 console.log(`Here is the cloned array: ${clonedFruits}`) // apple, banana, cherry, date, fig;
 
