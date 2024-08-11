@@ -1,4 +1,3 @@
-
 # JavaScript Starter Methods and Functions
 
 Welcome to the **JavaScript Starter Methods and Functions** repository! This project is designed for beginners who are looking to learn and understand fundamental JavaScript methods, functions, and definitions. The repository contains various examples and explanations of essential JavaScript array methods, string methods, and other utility functions that are frequently used in day-to-day programming.
@@ -20,17 +19,17 @@ Welcome to the **JavaScript Starter Methods and Functions** repository! This pro
     - [join](#join)
     - [slice](#slice)
   - [String Methods](#string-methods)
-    - [charAt](#charAt)
+    - [charAt](#charat)
     - [concat](#concat-1)
     - [includes](#includes)
-    - [indexOf](#indexOf)
+    - [indexOf](#indexof)
     - [slice](#slice-1)
     - [split](#split)
   - [Utility Functions](#utility-functions)
-    - [parseInt](#parseInt)
-    - [parseFloat](#parseFloat)
-    - [isNaN](#isNaN)
-    - [isFinite](#isFinite)
+    - [parseInt](#parseint)
+    - [parseFloat](#parsefloat)
+    - [isNaN](#isnan)
+    - [isFinite](#isfinite)
   - [Contributing](#contributing)
   - [License](#license)
 
@@ -148,8 +147,8 @@ console.log(slicedArray) // Output: ['banana', 'cherry']
 The charAt method returns the character at the specified index in a string.
 
 ```js
-let str = 'Hello World';
-console.log(str.charAt(1)); // Output: 'e'
+let str = "Hello World"
+console.log(str.charAt(1)) // Output: 'e'
 ```
 
 ### concat
@@ -157,10 +156,10 @@ console.log(str.charAt(1)); // Output: 'e'
 The concat method combines the text of two or more strings and returns a new string.
 
 ```js
-let str1 = 'Hello';
-let str2 = 'World';
-let str3 = str1.concat(' ', str2);
-console.log(str3); // Output: 'Hello World'
+let str1 = "Hello"
+let str2 = "World"
+let str3 = str1.concat(" ", str2)
+console.log(str3) // Output: 'Hello World'
 ```
 
 ### includes
@@ -168,8 +167,8 @@ console.log(str3); // Output: 'Hello World'
 The includes method determines whether one string may be found within another string, returning true or false as appropriate.
 
 ```js
-let str = 'Hello World';
-console.log(str.includes('World')); // Output: true
+let str = "Hello World"
+console.log(str.includes("World")) // Output: true
 ```
 
 ### indexOf
@@ -177,8 +176,8 @@ console.log(str.includes('World')); // Output: true
 The indexOf method returns the index within the calling String object of the first occurrence of the specified value, or -1 if not found.
 
 ```js
-let str = 'Hello World';
-console.log(str.indexOf('World')); // Output: 6
+let str = "Hello World"
+console.log(str.indexOf("World")) // Output: 6
 ```
 
 ### slice
@@ -186,9 +185,9 @@ console.log(str.indexOf('World')); // Output: 6
 The slice method extracts a section of a string and returns it as a new string, without modifying the original string.
 
 ```js
-let str = 'Hello World';
-let slicedStr = str.slice(1, 5);
-console.log(slicedStr); // Output: 'ello'
+let str = "Hello World"
+let slicedStr = str.slice(1, 5)
+console.log(slicedStr) // Output: 'ello'
 ```
 
 ### split
@@ -196,9 +195,9 @@ console.log(slicedStr); // Output: 'ello'
 The split method splits a String object into an array of strings by separating the string into substrings.
 
 ```js
-let str = 'Hello World';
-let arr = str.split(' ');
-console.log(arr); // Output: ['Hello', 'World']
+let str = "Hello World"
+let arr = str.split(" ")
+console.log(arr) // Output: ['Hello', 'World']
 ```
 
 ## Utility Functions
@@ -208,8 +207,8 @@ console.log(arr); // Output: ['Hello', 'World']
 The parseInt function parses a string argument and returns an integer of the specified radix.
 
 ```js
-console.log(parseInt('10')); // Output: 10
-console.log(parseInt('10.5')); // Output: 10
+console.log(parseInt("10")) // Output: 10
+console.log(parseInt("10.5")) // Output: 10
 ```
 
 ### parseFloat
@@ -217,8 +216,8 @@ console.log(parseInt('10.5')); // Output: 10
 The parseFloat function parses a string argument and returns a floating point number.
 
 ```js
-console.log(parseFloat('10.5')); // Output: 10.5
-console.log(parseFloat('10')); // Output: 10
+console.log(parseFloat("10.5")) // Output: 10.5
+console.log(parseFloat("10")) // Output: 10
 ```
 
 ### isNaN
@@ -226,8 +225,8 @@ console.log(parseFloat('10')); // Output: 10
 The isNaN function determines whether a value is NaN (Not-a-Number).
 
 ```js
-console.log(isNaN('Hello')); // Output: true
-console.log(isNaN(123)); // Output: false
+console.log(isNaN("Hello")) // Output: true
+console.log(isNaN(123)) // Output: false
 ```
 
 ### isFinite
@@ -235,8 +234,8 @@ console.log(isNaN(123)); // Output: false
 The isFinite function determines whether a number is a finite, legal number.
 
 ```js
-console.log(isFinite(123)); // Output: true
-console.log(isFinite(Infinity)); // Output: false
+console.log(isFinite(123)) // Output: true
+console.log(isFinite(Infinity)) // Output: false
 ```
 
 ## Contributing
