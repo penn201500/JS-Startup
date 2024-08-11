@@ -48,7 +48,7 @@ console.log(array5.splice(2, 2)) // ['Google', 'Facebook']
 console.log(array5) // ['Microsoft', 'Apple', 'Oracle']
 // only add, no delete:
 console.log(array5.splice(2, 0, "Google", "Facebook")) // return []
-console.log(array5) // ['Microsoft', 'Apple', 'Google', 'Facebook', 'Oracle']
+console.log(array5) // ['Microsoft', 'Apple', 'Google', 'Facebook', 'Yahoo', 'AOL', 'Excite', 'Oracle']
 
 // concat
 let array6 = ["Microsoft", "Apple", "Yahoo", "AOL", "Excite", "Oracle"]
@@ -70,7 +70,7 @@ const lastTwoFruits = fruits.slice(-2)
 console.log(`Here is the last two fruits: ${lastTwoFruits}`) // date, fig;
 const beyondLastIndex = fruits.slice(2, 10)
 console.log(`Here is the beyond last index: ${beyondLastIndex}`) // cherry, date, fig;
-const fromIndexToEnd = fruits.slice(2); // from index 2 to the end
+const fromIndexToEnd = fruits.slice(2) // from index 2 to the end
 console.log(`Here is the from index to end: ${fromIndexToEnd}`) // cherry, date, fig;
 const clonedFruits = fruits.slice()
 console.log(`Here is the cloned array: ${clonedFruits}`) // apple, banana, cherry, date, fig;
