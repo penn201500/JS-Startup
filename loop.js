@@ -47,4 +47,18 @@ const acc = arr.reduce((acc, value, index) => {
     console.log(`${index}: ${value}`)
     return acc
 }, 0)
-console.log(acc)
+
+// loop through map
+const map = new Map([
+    ["name", "Alice"],
+    ["age", 25],
+    ["city", "New York"],
+])
+// for..of
+for (let [k, v] of map) {
+    console.log(`${k}: ${v}`)
+}
+// for..each
+map.forEach((v, k) => {
+    console.log(`${k}: ${v}`);
+});
