@@ -117,3 +117,17 @@ console.log(first5) // 1
 console.log(second5) // 2
 console.log(third5) // 3 (overwrite the default value)
 console.log(fourth) // 4 (default value)
+
+// checking if an element exists in an array
+// includes()
+const array13 = [1, 2, 3, 4]
+console.log(array13.includes(2)) // true
+console.log(array13.includes(5)) // false
+// indexOf()
+console.log(array13.indexOf(2)) // 1
+console.log(array13.indexOf(5)) // -1
+// find() or findIndex()
+const found = array13.find(element => element === 2)
+console.log(`Here is the found element: ${found}`) // 2 ; return the value of the first element in the array that satisfies the provided testing function
+const foundIndex = array13.findIndex(element => element === 2)
+console.log(`Here is the found index: ${foundIndex}`) // 1 ; return the index of the first occurrence of a value in the array
