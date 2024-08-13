@@ -92,3 +92,28 @@ console.log(array10) // [5, 4, 3, 2, 1]
 const array11 = [1, 2, 3, 4, 5]
 console.log(array11.slice().reverse()) // return new array: [5, 4, 3, 2, 1]
 console.log(array11) // [1, 2, 3, 4, 5]
+
+// destructuring
+// unpack values from arrays into separate variables
+const array12 = [1, 2, 3]
+const [first, second, third] = array12
+console.log(first) // 1
+console.log(second) // 2
+console.log(third) // 3
+// skip the second element
+const [first2, , third2] = array12
+console.log(first2) // 1
+console.log(third2) // 3
+// only care about the first element
+const [first3] = array12
+console.log(first3) // 1
+// assign the rest of the array to a variable
+const [first4, ...rest] = array12
+console.log(first4) // 1
+console.log(rest) // [2, 3]
+// using default value
+const [first5, second5, third5 = 5, fourth = 4] = array12
+console.log(first5) // 1
+console.log(second5) // 2
+console.log(third5) // 3 (overwrite the default value)
+console.log(fourth) // 4 (default value)
