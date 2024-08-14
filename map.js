@@ -13,7 +13,10 @@ console.log(map.has("name")) // true
 console.log(map.has("weight")) // false
 
 // delete(k): removes the entry with the key k from the Map
+// delete() will update the Map object
 console.log(map.delete("name")) // true
 console.log(`Here is the updated map: ${map}`) // Here is the updated map: [object Map]
 console.log(map) // Map { 'age' => 25 }
 console.log(map.delete("weight")) // false
+console.log("Here is the updated map:", map) // ['Here is the updated map:', Map { 'age' => 25 }]
+console.log(`Here is the updated map: ${JSON.stringify(Array.from(map.entries()))}`) // Here is the updated map: [["age", 25]]
