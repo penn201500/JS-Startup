@@ -30,3 +30,7 @@ console.log(Array.from(map.values())) // [ 25 ]
 // entries(): returns an iterator over the key-value pairs in the Map
 console.log(map.entries()) // {}
 console.log(Array.from(map.entries())) // [ [ 'age', 25 ] ]
+
+// size()
+console.log(map.size) // 1
+
