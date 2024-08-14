@@ -2,6 +2,9 @@
 const str3 = "Hello World"
 console.log(str3.charAt(0)) // H
 
+// length
+console.log(str3.length) // 11
+
 // concat
 
 // split
