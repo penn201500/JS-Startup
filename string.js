@@ -1,4 +1,6 @@
 // charAt
+const str3 = "Hello World"
+console.log(str3.charAt(0)) // H
 
 // concat
 
