@@ -34,3 +34,7 @@ console.log(Array.from(map.entries())) // [ [ 'age', 25 ] ]
 // size()
 console.log(map.size) // 1
 
+// clear(): removes all entries from the Map
+console.log(map) // Map { 'age': 25 }
+map.clear()
+console.log(map) // Map {}
