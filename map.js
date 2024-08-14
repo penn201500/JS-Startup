@@ -20,3 +20,8 @@ console.log(map) // Map { 'age' => 25 }
 console.log(map.delete("weight")) // false
 console.log("Here is the updated map:", map) // ['Here is the updated map:', Map { 'age' => 25 }]
 console.log(`Here is the updated map: ${JSON.stringify(Array.from(map.entries()))}`) // Here is the updated map: [["age", 25]]
+
+// keys() : returns an iterator over the keys
+console.log(map) // Map { 'age' => 25 }
+console.log(Array.from(map.keys())) // [ 'age' ]
+console.log(map.keys()) // {}  console.log() will convert the object in it to a string using toString() method. But map.keys() is an iterator, the iterator object doesn't have a meaningful string representation
