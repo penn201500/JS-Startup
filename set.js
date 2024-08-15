@@ -21,3 +21,7 @@ console.log(Array.from(set.keys())) // [ 'b', 1 ]
 // For a Set object in JS, the keys() and values() methods do the same thing. Both methods return an iterator over the values in the Set object.
 console.log(set.values()) // {}
 console.log(Array.from(set.values())) // [ 'b', 1 ]
+// entries()
+// return an iterator over the [value,value] pairs in the Set
+console.log(set.entries()) // {}
+console.log(Array.from(set.entries())) // [ [ 'b', 'b' ], [ 1, 1 ] ]
