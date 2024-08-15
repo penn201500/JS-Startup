@@ -25,3 +25,7 @@ console.log(Array.from(set.values())) // [ 'b', 1 ]
 // return an iterator over the [value,value] pairs in the Set
 console.log(set.entries()) // {}
 console.log(Array.from(set.entries())) // [ [ 'b', 'b' ], [ 1, 1 ] ]
+// clear()
+console.log(set) // Set {0: 'b', 1: 1}
+set.clear()
+console.log(set) // Set {}
