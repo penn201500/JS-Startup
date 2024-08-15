@@ -12,5 +12,5 @@ console.log(set.has("c")) // false
 // delete(): removes a value from the set
 set.delete("a")
 console.log(set) // Set {0: 'b', 1: 1}
-// size(): returns the number of values in the set
+// size: returns the number of values in the set
 console.log(set.size) // 2
