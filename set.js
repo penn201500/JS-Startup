@@ -18,5 +18,6 @@ console.log(set.size) // 2
 console.log(set.keys()) // {}  console.log() will convert the object in it to a string using toString() method. But set.keys() is an iterator, the iterator object doesn't have a meaningful string representation;
 console.log(Array.from(set.keys())) // [ 'b', 1 ]
 // values()
+// For a Set object in JS, the keys() and values() methods do the same thing. Both methods return an iterator over the values in the Set object.
 console.log(set.values()) // {}
 console.log(Array.from(set.values())) // [ 'b', 1 ]
