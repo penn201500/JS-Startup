@@ -14,3 +14,6 @@ set.delete("a")
 console.log(set) // Set {0: 'b', 1: 1}
 // size: returns the number of values in the set
 console.log(set.size) // 2
+// keys()
+console.log(set.keys()) // {}  console.log() will convert the object in it to a string using toString() method. But set.keys() is an iterator, the iterator object doesn't have a meaningful string representation;
+console.log(Array.from(set.keys())) // [ 'b', 1 ]
