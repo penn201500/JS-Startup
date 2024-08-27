@@ -131,3 +131,15 @@ const found = array13.find(element => element === 2)
 console.log(`Here is the found element: ${found}`) // 2 ; return the value of the first element in the array that satisfies the provided testing function
 const foundIndex = array13.findIndex(element => element === 2)
 console.log(`Here is the found index: ${foundIndex}`) // 1 ; return the index of the first occurrence of a value in the array
+
+// flat()
+const arr14 = [1, 2, [3, 4]]
+console.log(arr14.flat()) // [1,2,3,4]
+console.log(arr14) // [1,2,[3,4]]
+const arr15 = [1, 2, [3, 4, [5, 6]]]
+console.log(arr15.flat()) // [1,2,3,4,[5,6]]
+// specify depth level
+console.log(arr15.flat(2)) // [1,2,3,4,5,6]
+// flatten infinitely nested array
+const arr16 = [1, 2, [3, 4, [5, 6, [7, 8]]]]
+console.log(arr16.flat(Infinity)) // [1,2,3,4,5,6,7,8]
